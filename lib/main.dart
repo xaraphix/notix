@@ -1,4 +1,4 @@
-import 'package:notix/styles/themes.dart';
+import 'package:notix/styles/themes.styles.dart';
 import 'package:flutter/material.dart';
 import 'package:notix/screens/app_screen.dart';
 

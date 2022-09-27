@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notix/widgets/app_banner.widget.dart';
+import 'package:notix/widgets/button.widget.dart';
 import 'package:notix/widgets/vertical_space.widget.dart';
 
 import '../widgets/navigation_items.widget.dart';
@@ -16,16 +17,30 @@ class NavPanel extends StatelessWidget {
         height: double.infinity,
         child: Container(
             color: Theme.of(context).backgroundColor,
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+            padding: const EdgeInsets.fromLTRB(30, 20, 30, 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                AppBanner(),
-                verticalSpace(20),
-                SearchBar(),
+                const AppBanner(),
+                verticalSpace(40),
+                const SearchBar(),
+                verticalSpace(40),
+                addBoxButton(),
                 const NavigationItems(),
-                Support()
+                const Support()
               ],
             )));
+  }
+
+  Row addBoxButton() {
+    return Row(
+      children: const [
+        Expanded(
+            child: Button(
+          displayName: 'Add Box',
+          borderRadius: 4,
+        )),
+      ],
+    );
   }
 }

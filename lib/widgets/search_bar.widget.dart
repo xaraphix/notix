@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:notix/styles/fonts.styles.dart';
+import 'package:notix/styles/themes.styles.dart';
+import 'package:notix/widgets/input_text.widget.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
+    return Row(children: const [
       Expanded(
-          child: Container(
-              color: Theme.of(context).canvasColor,
-              padding: const EdgeInsets.all(15),
-              child: const Text('Search Bar')))
+          child: InputText(
+              placeholder: 'Search',
+              borderRadius: 5,
+              backgroundColor: AppTheme.canvasColor,
+              textColor: AppTheme.primaryColorLight,
+              textWeight: FontWeight.w300))
     ]);
   }
 }
