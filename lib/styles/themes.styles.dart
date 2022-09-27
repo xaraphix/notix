@@ -9,7 +9,7 @@ class AppTheme with ChangeNotifier {
 
   static const primaryColor = Color(0xFFDFDFDF);
   static const primaryColorLight = Color(0xFF525252);
-  static const primaryColorDark = Color(0xFF5E5E5E);
+  static const primaryColorDark = Color(0xFF242328);
   static const focusColor = Color(0xFF0040FF);
   static const hoverColor = Color(0xFF28336F);
   static const shadowColor = Color(0xFF212121);

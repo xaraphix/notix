@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:notix/styles/icons.styles.dart';
 import 'package:notix/styles/themes.styles.dart';
 import 'package:notix/widgets/app_banner.widget.dart';
 import 'package:notix/widgets/button.widget.dart';
 import 'package:notix/widgets/input_text.widget.dart';
-import 'package:notix/widgets/vertical_space.widget.dart';
+import 'package:notix/widgets/utilities.widget.dart';
 
 import '../widgets/navigation_items.widget.dart';
 import '../widgets/support.widget.dart';
@@ -52,6 +53,7 @@ class NavPanel extends StatelessWidget {
             child: Button(
           displayName: 'Add Box',
           borderRadius: 4,
+          icon: AppIcons.plus,
         )),
       ],
     );

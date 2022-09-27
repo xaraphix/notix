@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:notix/styles/themes.styles.dart';
+import 'package:notix/view_models/pages_panel.vm.dart';
 import 'package:notix/widgets/app_banner.widget.dart';
 import 'package:notix/widgets/button.widget.dart';
 import 'package:notix/widgets/input_text.widget.dart';
 import 'package:notix/widgets/navigation_items.widget.dart';
 import 'package:notix/widgets/support.widget.dart';
-import 'package:notix/widgets/vertical_space.widget.dart';
+import 'package:notix/widgets/utilities.widget.dart';
 
-class PagesPanel extends StatelessWidget {
-  const PagesPanel({Key? key}) : super(key: key);
+class SelectedNoteBox extends StatelessWidget {
+  const SelectedNoteBox({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: 300,
+        width: 350,
         height: double.infinity,
         child: Container(
             color: AppTheme.canvasColor,
@@ -25,7 +26,8 @@ class PagesPanel extends StatelessWidget {
                 selectedNoteBox(),
                 verticalSpace(40),
                 addPageInput(),
-                selectedNoteBoxPages()
+                verticalSpace(40),
+                PagesPanel()
               ],
             )));
   }
@@ -44,9 +46,5 @@ class PagesPanel extends StatelessWidget {
 
   selectedNoteBox() {
     return const Text('Selected Note Box');
-  }
-
-  selectedNoteBoxPages() {
-    return const Text('Pages');
   }
 }
