@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:notix/styles/themes.styles.dart';
 import 'package:notix/widgets/app_banner.widget.dart';
 import 'package:notix/widgets/button.widget.dart';
 import 'package:notix/widgets/input_text.widget.dart';
+import 'package:notix/widgets/navigation_items.widget.dart';
+import 'package:notix/widgets/support.widget.dart';
 import 'package:notix/widgets/vertical_space.widget.dart';
 
-import '../widgets/navigation_items.widget.dart';
-import '../widgets/support.widget.dart';
-
-class NavPanel extends StatelessWidget {
-  const NavPanel({Key? key}) : super(key: key);
+class PagesPanel extends StatelessWidget {
+  const PagesPanel({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,43 +17,36 @@ class NavPanel extends StatelessWidget {
         width: 300,
         height: double.infinity,
         child: Container(
-            color: Theme.of(context).backgroundColor,
+            color: AppTheme.canvasColor,
             padding: const EdgeInsets.fromLTRB(30, 20, 30, 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const AppBanner(),
+                selectedNoteBox(),
                 verticalSpace(40),
-                searchBar(),
-                verticalSpace(40),
-                addBoxButton(),
-                const NavigationItems(),
-                const Support()
+                addPageInput(),
+                selectedNoteBoxPages()
               ],
             )));
   }
 
-  Row searchBar() {
+  Row addPageInput() {
     return Row(children: const [
       Expanded(
           child: InputText(
-              placeholder: 'Search',
+              placeholder: 'Add Page',
               borderRadius: 5,
-              backgroundColor: AppTheme.canvasColor,
+              backgroundColor: AppTheme.backgroundColor,
               textColor: AppTheme.primaryColorLight,
               textWeight: FontWeight.w500))
     ]);
   }
 
-  Row addBoxButton() {
-    return Row(
-      children: const [
-        Expanded(
-            child: Button(
-          displayName: 'Add Box',
-          borderRadius: 4,
-        )),
-      ],
-    );
+  selectedNoteBox() {
+    return const Text('Selected Note Box');
+  }
+
+  selectedNoteBoxPages() {
+    return const Text('Pages');
   }
 }

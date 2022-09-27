@@ -30,7 +30,7 @@ class AppTheme with ChangeNotifier {
   static const dialogBackgroundColor = Color(0xFF000000);
   static const indicatorColor = Color(0xFF000000);
   static const hintColor = Color(0xFF000000);
-  static const errorColor = Color(0xFF000000);
+  static const errorColor = Color(0xFF00FF00);
   static const toggleableActiveColor = Color(0xFF000000);
 
   static final ThemeData darkTheme = ThemeData(
