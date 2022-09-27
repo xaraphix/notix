@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.suyashsingh.niunotes">
+    package="in.suyashsingh.notix">
    <application
-        android:label="niunotes"
+        android:label="notix"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

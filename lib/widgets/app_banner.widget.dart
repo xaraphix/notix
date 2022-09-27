@@ -5,6 +5,11 @@ class AppBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('NiuNotes App Banner');
+    return Container(
+        child: const Text(
+      'Notix',
+      style: TextStyle(
+          fontFamily: 'Inter', fontWeight: FontWeight.w100, fontSize: 20),
+    ));
   }
 }

@@ -1,20 +1,20 @@
+import 'package:notix/styles/themes.dart';
 import 'package:flutter/material.dart';
-import 'package:niunotes/screens/app_screen.dart';
+import 'package:notix/screens/app_screen.dart';
 
 void main() {
-  runApp(const NiuNotes());
+  runApp(const Notix());
 }
 
-class NiuNotes extends StatelessWidget {
-  const NiuNotes({Key? key}) : super(key: key);
+class Notix extends StatelessWidget {
+  const Notix({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'NiuNotes',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      title: 'Notix',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.darkTheme,
       home: const AppScreen(),
     );
   }

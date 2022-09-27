@@ -1,6 +1,6 @@
 {
-    "name": "niunotes",
-    "short_name": "niunotes",
+    "name": "notix",
+    "short_name": "notix",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

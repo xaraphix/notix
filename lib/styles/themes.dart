@@ -1,0 +1,65 @@
+import 'package:flutter/material.dart';
+
+AppTheme currTheme = AppTheme();
+
+class AppTheme with ChangeNotifier {
+  static const bool _isDarkTheme = true;
+  static ThemeMode get themeMode => ThemeMode.dark;
+
+  static final ThemeData darkTheme = ThemeData(
+      brightness: Brightness.dark,
+      primaryColor: Color(0xFFDFDFDF),
+      primaryColorLight: Color(0xFFAAAAAA),
+      primaryColorDark: Color(0xFF5E5E5E),
+      focusColor: Color(0xFF0040FF),
+      hoverColor: Color(0xFF28336F),
+      shadowColor: Color(0xFF212121),
+      canvasColor: Color(0xFF28272C),
+      scaffoldBackgroundColor: Color(0xFF000000),
+      bottomAppBarColor: Color(0xFF000000),
+      cardColor: Color(0xFF000000),
+      dividerColor: Color(0xFF000000),
+      highlightColor: Color(0xFF000000),
+      splashColor: Color(0xFF000000),
+      selectedRowColor: Color(0xFF000000),
+      unselectedWidgetColor: Color(0xFF000000),
+      disabledColor: Color(0xFF000000),
+      secondaryHeaderColor: Color(0xFF000000),
+      backgroundColor: Color(0xFF2C2B30),
+      dialogBackgroundColor: Color(0xFF000000),
+      indicatorColor: Color(0xFF000000),
+      hintColor: Color(0xFF000000),
+      errorColor: Color(0xFF000000),
+      toggleableActiveColor: Color(0xFF000000),
+      fontFamily: 'Inter',
+      textTheme: TextTheme(
+        displayLarge: TextStyle(),
+        displayMedium: TextStyle(),
+        displaySmall: TextStyle(),
+        headlineLarge: TextStyle(),
+        headlineMedium: TextStyle(),
+        headlineSmall: TextStyle(),
+        titleLarge: TextStyle(),
+        titleMedium: TextStyle(),
+        titleSmall: TextStyle(),
+        bodyLarge: TextStyle(),
+        bodyMedium: TextStyle(),
+        bodySmall: TextStyle(),
+        labelLarge: TextStyle(),
+        labelMedium: TextStyle(),
+        labelSmall: TextStyle(),
+        headline1: TextStyle(),
+        headline2: TextStyle(),
+        headline3: TextStyle(),
+        headline4: TextStyle(),
+        headline5: TextStyle(),
+        headline6: TextStyle(),
+        subtitle1: TextStyle(),
+        subtitle2: TextStyle(),
+        bodyText1: TextStyle(),
+        bodyText2: TextStyle(),
+        caption: TextStyle(),
+        button: TextStyle(),
+        overline: TextStyle(),
+      ));
+}

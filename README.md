@@ -1,4 +1,4 @@
-# niunotes
+# notix
 
 A new Flutter project.
 

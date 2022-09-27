@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "in.suyashsingh" "\0"
-            VALUE "FileDescription", "niunotes" "\0"
+            VALUE "FileDescription", "notix" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "niunotes" "\0"
+            VALUE "InternalName", "notix" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 in.suyashsingh. All rights reserved." "\0"
-            VALUE "OriginalFilename", "niunotes.exe" "\0"
-            VALUE "ProductName", "niunotes" "\0"
+            VALUE "OriginalFilename", "notix.exe" "\0"
+            VALUE "ProductName", "notix" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
