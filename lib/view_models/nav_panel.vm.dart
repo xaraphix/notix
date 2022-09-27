@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:notix/styles/themes.styles.dart';
 import 'package:notix/widgets/app_banner.widget.dart';
 import 'package:notix/widgets/button.widget.dart';
+import 'package:notix/widgets/input_text.widget.dart';
 import 'package:notix/widgets/vertical_space.widget.dart';
 
 import '../widgets/navigation_items.widget.dart';
-import '../widgets/search_bar.widget.dart';
 import '../widgets/support.widget.dart';
 
 class NavPanel extends StatelessWidget {
@@ -23,13 +24,25 @@ class NavPanel extends StatelessWidget {
               children: [
                 const AppBanner(),
                 verticalSpace(40),
-                const SearchBar(),
+                searchBar(),
                 verticalSpace(40),
                 addBoxButton(),
                 const NavigationItems(),
                 const Support()
               ],
             )));
+  }
+
+  Row searchBar() {
+    return Row(children: const [
+      Expanded(
+          child: InputText(
+              placeholder: 'Search',
+              borderRadius: 5,
+              backgroundColor: AppTheme.canvasColor,
+              textColor: AppTheme.primaryColorLight,
+              textWeight: FontWeight.w300))
+    ]);
   }
 
   Row addBoxButton() {

@@ -91,6 +91,9 @@ flutter:
           weight: 500
         - asset: assets/fonts/Inter/Inter-Thin.ttf
           weight: 100
+    - family: Icons
+      fonts:
+        - asset: assets/fonts/icons/icons.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
